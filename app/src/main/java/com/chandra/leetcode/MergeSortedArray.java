@@ -3,9 +3,11 @@ package com.chandra.leetcode;
 public class MergeSortedArray {
     /**
      * <a href="https://leetcode.com/problems/merge-sorted-array/">88. Merge Sorted Array</a>
-     * 1. Start comparing elements from the last index. i.e, m-1, n-1
-     * 2. Copy the bigger element to the end of nums1. i.e, m+n-i
-     * 3. If there are any residual elements in nums2, just copy it to nums1
+     * <ol>
+     * <li>Start comparing elements from the last index. i.e, m-1, n-1</li>
+     * <li>Copy the bigger element to the end of nums1. i.e, m+n-i</li>
+     * <li>If there are any residual elements in nums2, just copy it to nums1</li>
+     * </ol>
      */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         if (n == 0) return;
